@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red : #B9090B;
+    --black : #141414;
+    --white : #FFFFFF;
+    --whiteOpacity: rgba(255, 255, 255, 0.3);
+    --smokeWhite: #E5E5E5;
+    --gray : #808080;
+    --midGray : rgba(109, 109, 110, 0.7);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background-color: var(--black);
+}
+
+header {
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    position: fixed;
+}
+
+header .right > * , header .left > * , header .left ul li{
+    margin-right: 15px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+main {
+    width: 100%;
+    height: 810px;
+    background-image: url("../img/MoviePoster.png");
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .content {
+    width: 35%;
+    padding: 30px;
+}
+
+main .content > * {
+    margin: 10px 0;
+}
+
+main .content > p {
+    line-height: 25px;
+}
+
+main .movieTitle {
+    font-size: 80px;
+    font-weight: 900;
+}
+
+main .top10 p {
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-left: 10px;
+}
+
+.btn {
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: var(--white);
+    color: var(--black);
+    margin-right: 10px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.btn > img {
+    margin-right: 5px;
+}
+
+.btn:first-child p {
+    margin-top: 3px;
+}
+
+.secondary {
+    background-color: var(--whiteOpacity);
+}
+
+.moviesList {
+    margin-top: -100px;
+    padding-left: 50px;
+    width: 100%;
+    color: var(--white);
+}
+
+.moviesList .list {
+    margin: 20px 0;
+}
+
+.moviesList .scroll {
+    overflow-x: scroll;
+}
+
+.moviesList img {
+    margin-right: 5px;
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 20px;
+    padding-left: 310px;
+}
+
+footer img {
+    margin-right: 20px;
+}
+
+footer .links {
+    display: flex;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    margin-right: 80px;
+}
+
+footer ul li {
+    margin: 10px 10px 10px 0px;
+    line-height: 30px;
+    color: var(--gray);
+}
+
+footer p {
+    color: var(--gray);
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+footer button {
+    background: none;
+    border: none;
+    color: var(--gray);
+    border: solid 1px var(--gray);
+    padding: 10px 30px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    transition: color .5s, border .5s;
+}
