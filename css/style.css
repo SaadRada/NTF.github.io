@@ -15,6 +15,11 @@
     --midGray : rgba(109, 109, 110, 0.7);
 }
 
+a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
