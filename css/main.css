@@ -121,6 +121,13 @@ main .top10 p {
 .moviesList .scroll {
     overflow-x: scroll;
 }
+.moviesList .scroll::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+.moviesList .scroll::-webkit-scrollbar-thumb {
+    background: transparent;
+}
 
 .moviesList img {
     margin-right: 5px;
